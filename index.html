@@ -4,9 +4,33 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
     <title>Vuejs - Udemy</title>
 </head>
 <body>
-    
+    <div id="app">
+        <div>{{msg}}</div>
+        red
+        <input @click="corP($event.target.value)" type="radio" name="cor" value="red" checked>
+        green
+        <input @click="corP($event.target.value)" type="radio" name="cor" value="green">
+        blue
+        <input @click="corP($event.target.value)" type="radio" name="cor" value="blue">
+        yellow
+        <input @click="corP($event.target.value)" type="radio" name="cor" value="yellow">
+
+        <p v-bind:class="classParagrafo">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Blanditiis vero nesciunt voluptate nobis facilis beatae vel nemo quae, et reprehenderit laboriosam reiciendis at error quo dolor qui. Pariatur, voluptatibus inventore!</p>
+    </div>
+
+    <style>
+    .red { background-color:red ;}
+    .green {background-color: green;}
+    .blue {background-color: blue; }
+    .yellow {background-color:yellow ; }
+    </style>
+
+
+
+    <script src="script.js"></script>
 </body>
 </html>
